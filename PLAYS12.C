@@ -2,16 +2,11 @@
 #include<conio.h>
 void main()
 {
-int number,rem,temp,tot=0;
+int number,i,fact=1;
 clrscr();
 scanf("%d",&number);
-//temp=number;
-while(number>0)
-{
-rem=number%10;
-tot=tot*10+rem;
-number/=10;
-}
-printf("%d",tot);
+for(i=number;i>0;i--)
+ fact*=i;
+printf("%d",fact);
 getch();
 }
