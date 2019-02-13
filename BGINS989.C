@@ -2,14 +2,22 @@
 #include<conio.h>
 void main()
 {
-char str[100];
-int i;
+char str[50],temp[50];
+int i,k,j;
 clrscr();
-scanf("%s",str);
+printf("\nenter the string:");
+scanf("%[^\n]s",str);
 for(i=0;str[i]!='\0';i++)
 {
- if(str[i]>str[i+1])
-   printf("%c",str[i+1]);
-}
+for(j=i+1;str[j]!='\0';j++)
+	{
+	if(str[i]>str[j])
+	{
+	temp[k]=str[i];
+	str[i]=str[j];
+	str[j]=temp[k];
+	}	}
+	}
+printf("\n%s",str);
 getch();
 }
