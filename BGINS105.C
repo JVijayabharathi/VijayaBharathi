@@ -7,7 +7,6 @@ int si,n;
 clrscr();
 scanf("%d %d %d",&p,&n,&r);
 result=((p*n*r)/100);
-//si=floor(result);
 printf("\n%d",result);
 getch();
 }
