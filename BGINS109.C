@@ -2,11 +2,10 @@
 #include<conio.h>
 void main()
 {
-int l,w,h,tsa,vol;
+int a,b,c,res;
 clrscr();
-scanf("%d %d %d",&l,&w,&h);
-
-vol=l*w*h;
-printf("%d %d",tsa,vol);
+scanf("%d %d %d",&a,&b,&c);
+res=a*b%c;
+printf("%d",res);
 getch();
 }
