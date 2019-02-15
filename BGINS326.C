@@ -2,9 +2,9 @@
 #include <stdbool.h>
 #define MAX 7
 int intArray[MAX] = {4,6,3,2,1,9,7};
-void printline(int count) {
+void printline(int cnt) {
    int i;
-   for(i = 0;i <count-1;i++) {
+   for(i = 0;i <cnt-1;i++) {
       printf("=");
    }
    printf("=\n");
@@ -19,9 +19,9 @@ void display() {
    printf("]\n");
 }
 void swap(int num1, int num2) {
-   int temp = intArray[num1];
+   int tem = intArray[num1];
    intArray[num1] = intArray[num2];
-   intArray[num2] = temp;
+   intArray[num2] = tem;
 }
 int partition(int left, int right, int pivot) {
    int leftPointer = left -1;
