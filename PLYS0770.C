@@ -18,5 +18,5 @@ else
 printf("%c",a[i]);
 }
 }
-getch();
+return 0;
 }
