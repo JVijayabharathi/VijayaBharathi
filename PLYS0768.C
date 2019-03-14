@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+int j,i,n,a[100],max,b[100];
+max=0;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+for(i=0;i<100;i++)
+{
+b[i]=0;
+}
+for(i=0;i<n;i++)
+{
+j=a[i];
+b[j]+=1;
+}
+for(i=0;i<100;i++)
+{
+if(b[i]!=0)
+{
+if(b[i]>max)
+{
+max=b[i];
+}
+}
+}
+printf("%d",max);
+}
