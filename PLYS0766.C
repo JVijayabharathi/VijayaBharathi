@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+int j,i,n,a[100],b[100],k;
+scanf("%d",&n);
+scanf("%d",&k);
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+for(i=0;i<100;i++)
+{
+b[i]=0;
+}
+for(i=0;i<n;i++)
+{
+j=a[i];
+b[j]+=1;
+}
+for(i=0;i<100;i++)
+{
+if(b[i]!=0)
+{
+if(b[i]==k)
+{
+printf("\t%d",b[i]);
+}
+}
+}
+getch();
+}
