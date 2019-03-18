@@ -1,8 +1,8 @@
 #include <stdio.h>
-int main(void) 
+int main() 
 {
-	int a[n],i,sum=0,res;
-  scanf("%d",&n);
+	int a[50],i,sum=0,res;
+        scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		scanf("%d ",&a[i]);
