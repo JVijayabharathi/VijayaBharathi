@@ -12,29 +12,29 @@ int main()
 		{
 		if(num[i]>num[j])
 		{
-			temp=a[i];
-			a[i]=a[j];
-			a[j]=temp;
+			temp=num[i];
+			num[i]=num[j];
+			num[j]=temp;
 		}
 		}
 	}
 	for(i=0;i<k;i++)
-	printf("%d",a[i]);
+	printf("%d",num[i]);
 
 	for(i=k;i<n;i++)
 	{
 		for(j=i+1;j<n;j++)
 		{
-		if(a[i]<a[j])
+		if(num[i]<num[j])
 		{
-			temp=a[i];
-			a[i]=a[j];
-			a[j]=temp;
+			temp=num[i];
+			num[i]=num[j];
+			num[j]=temp;
 		}
 		}
 	}
 	for(i=k;i<n;i++)
-	printf("%d",a[i]);
+	printf("%d",num[i]);
   return 0;
 	
 	
