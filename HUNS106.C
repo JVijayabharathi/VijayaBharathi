@@ -12,13 +12,16 @@ int main(void) {
     for(j=i+1;j<n;j++)
     {
      
-      if(a[i]!=a[j])
+      if(a[i]==a[j])
       {
        // printf("%d",a[i]); 
         temp=a[i];
         printf("%d ",temp);
+        i=n;
         break;
       }
+    
+    
     }
-    break;
   }
+}
